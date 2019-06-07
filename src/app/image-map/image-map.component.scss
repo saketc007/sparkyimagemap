@@ -1,0 +1,50 @@
+.coordinates-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  .area {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.1s;
+    &:hover{
+      border: 2px solid lightgray;
+      box-shadow: 0 0px 5px darkgray;
+    }
+  }
+}
+
+#image-container {
+  position: relative;
+}
+
+[tooltip]:before {
+  /* needed - do not touch */
+  content: attr(tooltip);
+  position: absolute;
+  opacity: 0;
+  
+  /* customizable */
+  transition: all 0.15s ease;
+  padding: 10px;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px silver;    
+}
+
+[tooltip]:hover:before {
+  /* needed - do not touch */
+  opacity: 1;
+  
+  /* customizable */
+  background: yellow;
+  margin-top: -50px;
+  margin-left: 20px;    
+}
+
+[tooltip]:not([tooltip-persistent]):before {
+  pointer-events: none;
+}
+

@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@spartacus/styles/index";
+
+.image-set {
+  display: flex;
+  margin: 10px;
+
+  .rightpanel {
+    width: 300px;
+    display: block;
+    padding: 10px;
+  }
+}
+
+/*
+.global {
+  position: absolute;
+}
+.image {
+  float: left;
+}
+.rightpanel {
+  float: left;
+  width: 300px;
+  height: 100%;
+}
+.productlist {
+  position: absolute;
+  margin-left: 5px;
+  width: 295px;
+  height: 55%;
+  overflow-y: auto;
+}
+.boxshadow {
+  border: solid 1px #CCC;
+  -moz-box-shadow: 5px 5px 0px #999;
+  -webkit-box-shadow: 5px 5px 0px #999;
+  box-shadow: 5px 5px 0px #999;
+}
+.product {
+  display: flex;
+  align-items: center;
+  margin-left: 3px;
+}
+.overview {
+  width: 295px;
+  height: 40%;
+  overflow-y: auto;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 5px;
+}
+.productoverview {
+  margin: 5px;
+}
+.buttonbar {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.buttonbar button {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+}
+*/

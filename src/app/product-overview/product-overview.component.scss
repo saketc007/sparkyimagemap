@@ -1,0 +1,10 @@
+div.description { 
+  // display:block;
+  // width:900px;
+  // word-wrap:break-word;
+  max-height: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // white-space: nowrap;
+  width: 100%;
+}

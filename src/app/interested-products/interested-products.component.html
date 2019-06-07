@@ -1,0 +1,19 @@
+
+ <ng-container *ngFor="let product of getProductsForImageMap(imageMap)"> 
+    
+  <div class="interested-products" [id]="product.hybrisId" [ngStyle]="getProductCurrentStyle(product)" 
+   >
+    <img [src]="product.thumbnailUrl" (click)="toggleInterested(product)">
+    <label >{{ product.formattedPrice }}</label> 
+    <a href="{{ product.detailUrl}}" target="_blank"> Product details...</a>
+  </div>
+</ng-container>
+
+<div >
+  
+<button class="btn btn-primary btn-block" type="button" (click)="onAddToCart()" 
+        [disabled]="!isAnyProductSelected()"
+> Add {{ countSelectedProducts() }} products to cart
+</button>
+  
+</div>
